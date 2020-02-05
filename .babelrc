@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["@babel/env", { "modules": false }],
+    "@babel/react",
+    "@babel/typescript",
+    [
+      "@emotion/babel-preset-css-prop",
+      {
+        "autoLabel": true,
+        "sourceMap": true,
+        "labelFormat": "[local]"
+      }
+    ]
+  ],
+  "plugins": ["@babel/transform-runtime", "@babel/proposal-class-properties", "@babel/proposal-object-rest-spread"]
+}
